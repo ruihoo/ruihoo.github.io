@@ -7,6 +7,11 @@
   color: #f09228;
   text-decoration:none;
   }
+
+  body {
+    margin-top: 0;
+  }
+
   body,td,th {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
     font-size: 16px;
@@ -38,3 +43,84 @@
     font-weight: 400
   }
 
+table.activaty {
+    margin: 0 0 2em 0;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif, 'Titillium Web', Verdana, Helvetica;
+    /*font-size: 14px;*/
+}
+
+table.activaty tbody tr {
+    border: solid 1px #e5e5e5;
+    border-left: 0;
+    border-right: 0;
+}
+
+    table.activaty tbody tr:nth-child(2n + 1) {
+        background-color: #f8f8f8;
+    }
+
+table.activaty td {
+    padding: 0.75em 0.75em;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+table.activaty > tbody > tr > td {
+    padding: 0.75em 0.75em;
+    vertical-align: middle;
+}
+
+/* section.container {
+    width: 60em;
+} */
+
+table.activaty td {
+    padding: 0.75em 0.75em;
+    vertical-align: middle;
+}
+
+table.activaty span {
+    color: #7f0000;
+}
+
+table.activaty th {
+    color: #646464;
+    font-size: 0.9em;
+    font-weight: 300;
+    padding: 0 0.75em 0.75em 0.75em;
+    text-align: left;
+}
+
+table.activaty thead {
+    border-bottom: solid 2px #e5e5e5;
+}
+
+table.activaty thead th {
+    text-align: center;
+    font-weight: bold;
+}
+
+table.activaty thead th.date {
+    /* width: 10%; */
+    width: 10%;
+}
+
+table.activaty thead th.presenter {
+    /* width: 20%; */
+    width: 15%;
+}
+
+table.activaty thead th.affiliation {
+    /* width: 10%; */
+    width: 8%;
+}
+
+table.activaty tfoot {
+  border-top: solid 2px #e5e5e5;
+}
+
+table.activaty {
+    border-collapse: collapse !important;
+}
