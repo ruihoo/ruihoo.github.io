@@ -57,9 +57,9 @@ table.activaty tbody tr {
     border-right: 0;
 }
 
-    table.activaty tbody tr:nth-child(2n + 1) {
-        background-color: #f8f8f8;
-    }
+table.activaty tbody tr:nth-child(2n + 1) {
+    background-color: #f8f8f8;
+}
 
 table.activaty td {
     padding: 0.75em 0.75em;
@@ -71,10 +71,6 @@ table.activaty > tbody > tr > td {
     padding: 0.75em 0.75em;
     vertical-align: middle;
 }
-
-/* section.container {
-    width: 60em;
-} */
 
 table.activaty td {
     padding: 0.75em 0.75em;
@@ -123,6 +119,13 @@ table.activaty tfoot {
 
 table.activaty {
     border-collapse: collapse !important;
+}
+
+table.activaty td.theme {
+    padding-top: 20px;
+    color: darkred;
+    font-style: italic;
+    /*font-weight: bold;*/
 }
 
 table.paper img {
