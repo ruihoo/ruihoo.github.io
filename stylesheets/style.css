@@ -129,3 +129,13 @@ table.paper td {
     padding-right: 5px;
     padding-left: 5px;
 }
+
+div.Related ul {
+    margin: 0;
+    padding: 0;
+}
+div.Related li {
+    list-style: none;
+    float: left;
+    padding: 10px 10px;
+}
