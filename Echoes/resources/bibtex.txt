@@ -1,0 +1,6 @@
+@inproceedings{Hu2023Echoes,
+  title={Echoes: Unsupervised Debiasing via Pseudo-bias Labeling in an Echo Chamber},
+  author={Rui Hu, Yahan Tu, Jitao Sang},
+  booktitle={ACM Multimedia},
+  year={2023}
+}

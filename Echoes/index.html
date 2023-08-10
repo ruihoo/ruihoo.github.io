@@ -1,0 +1,309 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1100px;
+	}
+	
+	h1 {
+		font-size:32px;
+		font-weight:300;
+	}
+	
+	.disclaimerbox {
+		background-color: #eee;		
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+	
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+	
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		15px 15px 0 0px #fff, /* The fourth layer */
+		15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		20px 20px 0 0px #fff, /* The fifth layer */
+		20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		25px 25px 0 0px #fff, /* The fifth layer */
+		25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+	
+	.vert-cent {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+</style>
+
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJFX2BFB9X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WJFX2BFB9X');
+</script>
+	<title>Echoes: Unsupervised Debiasing via Pseudo-bias Labeling in an Echo Chamber</title>
+</head>
+
+<body>
+	<br>
+	<center>
+		<span style="font-size:34px">Echoes: Unsupervised Debiasing via Pseudo-bias Labeling in an Echo Chamber</span>
+		<br>
+		<br>
+		<table align=center width=1000px>
+			<table align=center width=500px>
+				<tr>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:22px"><a href="">Rui Hu</a><sup>1</sup></span>
+						</center>
+					</td>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:22px"><a href="">Yahan Tu</a><sup>2</sup></span>
+						</center>
+					</td>					
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:22px"><a href="">Jitao Sang</a><sup>1,3</sup></span>
+						</center>
+					</td>
+			</table>
+
+
+			</tbody></table><br>
+		  	<table align="center" width="800px">
+				<tbody><tr>
+					<td align="center" width="500px">
+				  		<center>
+							<span style="font-size:20px"><sup>1</sup>Beijing Jiaotong University</span>
+						</center>
+					</td>
+					<td align="center" width="700px">
+				  		<center>
+							<span style="font-size:20px"><sup>2</sup>China University of Geoscience Beijing</span>
+						</center>
+					</td>
+					<td align="center" width="300px">
+				  		<center>
+							<span style="font-size:20px"><sup>3</sup>Peng Cheng Lab</span>
+						</center>
+					</td>
+			</tr></tbody></table>
+
+			<br>
+			<table align=center width=500px>
+				<tr>
+					<td align=center width=500px>
+						<center>
+							<span style="font-size:22px">
+								<span style="font-size:22px"><em>ACM Multimedia</em> 2023</span>
+							</span>
+						</center>
+					</td>
+				</tr>
+			</table>
+			
+			<table align=center width=250px>
+				<br>
+				<tr>
+					<span style="font-size:22px">
+						<a href="https://arxiv.org/abs/2305.04043">ArXiv</a> |
+						<a href="https://github.com/isruihu/Echoes">Code</a> |
+						<a href="./resources/bibtex.txt">Bibtex</a>
+					</span>
+				</tr>
+			</table>
+		</table>
+	</center>
+	<!-- <br>
+	<center>
+		<table align=center width=1000px>
+			<tr>
+				<td width=1000px>
+					<center>
+						<img src="./resources/overview.png" alt="clean-usnob" width="1050">
+					</center>
+				</td>
+			</tr>
+		</table>
+	</center> -->
+
+	<hr>
+	<table align=center width=850px>
+		<center><h1>Abstract</h1></center>
+		<tr>
+			<td>
+				Neural networks often learn spurious correlations when exposed to biased training data, leading to poor performance on out-of-distribution data. A biased dataset can be divided, according to biased features, into bias-aligned samples (i.e., with biased features) and bias-conflicting samples (i.e., without biased features). Recent debiasing works typically assume that no bias label is available during the training phase, as obtaining such information is challenging and labor-intensive. Following this unsupervised assumption, existing methods usually train two models: a biased model specialized to learn biased features and a target model that uses information from the biased model for debiasing. This paper first presents experimental analyses revealing that the existing biased models overfit to bias-conflicting samples in the training data, which negatively impacts the debiasing performance of the target models. To address this issue, we propose a straightforward and effective method called Echoes, which trains a biased model and a target model with a different strategy. We construct an "echo chamber" environment by reducing the weights of samples which are misclassified by the biased model, to ensure the biased model fully learns the biased features without overfitting to the bias-conflicting samples. The biased model then assigns lower weights on the bias-conflicting samples. Subsequently, we use the inverse of the sample weights of the biased model for training the target model. Experiments show that our approach achieves superior debiasing results compared to the existing baselines on both synthetic and real-world datasets.
+			</td>
+		</tr>
+	</table>
+	<br>
+
+	<hr>
+	<center><h1>Motivation</h1></center>
+
+	<table align=center width=850px>
+		<tr>
+			<td>
+				Our experimental analysis reveals that existing bias models, e.g., an ERM model or a GCE model, fail to provide accurate pseudo-bias labels, i.e., unable to identify bias-conflicting samples in the training data. Due to the scarcity of the bias-conflicting samples, the biased models are prone to memorize these samples to minimize the training loss, leading to the overfitting on them. For example, the error rate of an ERM model on the bias-conflicting sample of CelebA is close to zero at the end of training. This, in turn, negatively impacts the debiasing performance of the target modes. Besides, through experiments, we find that partially biased data is sufficient for the model to learn biased features as they are easy-to-learned.
+			</td>
+		</tr>
+		<tr height=20px></tr>
+		<tr>
+			<td>
+				<center><img class="round" style="width:450px" src="./resources/motivation.png"/></center>
+			</td>
+		</tr>
+	</table>
+
+	<br>
+	<hr>
+	<center><h1>Method</h1></center>
+
+	<table align=center width=850px>
+		<tr>
+			<td>
+				We propose a simple and effective unsupervised debiasing method called Echoes (Echo chamber for debiasing) which trains a biased model and a target model in an echo chamber. Unlike the training of existing biased model, we are inspired by the Echo chamber phenomenon in media communication, and continually adjust the weights of the samples during the training phase like the information changing in an echo chamber, so that the biased model can distinguish bias-conflicting samples from bias-aligned ones. Specifically, we consider that in the early training phase, the majority of samples correctly classified by the biased model are bias-aligned, while the samples misclassified by the model consist of a minority of bias-aligned samples and a majority of bias-conflicting ones. Then we can "hide" these error samples by reducing their weights. The remaining samples that are correctly classified by the biased model will be retrained in the next training round, just like the echo in an echo chamber. In the end, the biased model sufficiently learns from bias-aligned samples, while underfitting for bias-conflicting ones, which indicates that more accurate bias information can be provided to the target model.
+			</td>
+		</tr>
+		<tr height=20px></tr>
+		<tr>
+			<td>
+				<center><img class="round" style="width:750px" src="./resources/Echoes.png"/></center>
+			</td>
+		</tr>
+	</table>
+
+	<br>
+	<hr>
+	<center><h1>Results</h1></center>
+	<table align=center width=850px>
+		<tr>
+			<td>
+				Quantitative result on CelebA dataset: our method achieves the best worst group accuracy and average bias gap on all three tasks. The average group accuracy of our method is relatively low, but the worst group accuracy is high, which indicates that the accuracy of different groups is close, and this also reflects the debiasing performance of our method.
+			</td>
+		</tr>
+		<tr height=20px></tr>
+		<tr>
+			<td>
+				<center><img class="round" style="width:700px" src="./resources/result_celeba.png"/></center>
+			</td>
+		</tr>
+		<tr height=20px></tr>
+		<tr>
+			<td>
+				Effectiveness of our biased model: the error rate of our model on the bias-conflicting samples of the training set is consistently high, i.e., our biased model does not overfit to the bias-conflicting samples.
+			</td>
+		</tr>
+		<tr height=20px></tr>
+		<tr>
+			<td>
+				<center><img class="round" style="width:450px" src="./resources/result_biased_model.png"/></center>
+			</td>
+		</tr>
+	</table>
+
+
+
+	<hr>
+	<table style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	  <tr>
+		<td style="padding:0px">
+		  <br>
+		  <p style="text-align:center;">
+			Webpage template modified from <a href="https://github.com/richzhang/webpage-template/">Richard Zhang</a>.
+		  </p>
+		</td>
+	  </tr>
+	</tbody></table>
+
+<br>
+</body>
+</html>
