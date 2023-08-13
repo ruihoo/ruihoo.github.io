@@ -26,8 +26,6 @@ To address the problem, we propose a simple and effective unsupervised debiasing
 
 <img src="./resources/model-biased.png" alt="model-biased" style="zoom: 67%;" />
 
-
-
 In the echo chamber, a lower sample weight indicates that it is more often misclassified by the biased model, and a higher weight indicates that it is more often correctly classified. This means that samples with lower weights are harder to be learned by the biased model, making them more important for the target model. Based on this analysis, we simply use the inverse of the biased model’s sample weights as the target model’s sample weights, so that the target model can focus on learning hard samples to prevent learning spurious correlations.
 
 <img src="./resources/Echoes.png" alt="Echoes" style="zoom:50%;" />
