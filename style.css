@@ -118,18 +118,18 @@ table.paper td {
     padding-top: 10px;
     padding-right: 10px;
 }
-table.paper div.paper_img {
-    border:1px solid black;
-    height: 80px;
-    width: 100px;
-    display: table-cell;
-    vertical-align: middle;
+
+table.paper td.paper_img {
     text-align: center;
+    vertical-align: middle;
+    height: 110px;
+    width: 200px;
+/*    border: solid 2px #e5e5e5;*/
 }
+
 table.paper img {
-    max-width: 90%;
-    left: 50%;
-    top: 50%;
+    height: 100%;
+    max-width: 95%;
 }
 
 div.Related ul {
